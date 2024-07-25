@@ -1632,7 +1632,7 @@ __check_end_of_life_versions() {
 
         centos)
             # CentOS versions lower than 8 are no longer supported
-            if [ "$DISTRO_MAJOR_VERSION" -lt 8 ]; then
+            if [ "$DISTRO_MAJOR_VERSION" -lt 7 ]; then
                 echoerror "End of life distributions are not supported."
                 echoerror "Please consider upgrading to the next stable. See:"
                 echoerror "    http://wiki.centos.org/Download"
@@ -1642,7 +1642,7 @@ __check_end_of_life_versions() {
 
         red_hat*linux)
             # Red Hat (Enterprise) Linux versions lower than 8 are no longer supported
-            if [ "$DISTRO_MAJOR_VERSION" -lt 8 ]; then
+            if [ "$DISTRO_MAJOR_VERSION" -lt 7 ]; then
                 echoerror "End of life distributions are not supported."
                 echoerror "Please consider upgrading to the next stable. See:"
                 echoerror "    https://access.redhat.com/support/policy/updates/errata/"
